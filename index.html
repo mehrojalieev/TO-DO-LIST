@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.min.css">
+</head>
+<body>
+  <div class="todolist">
+    <div class="todolist__controller">
+      <form id="todolist__form">
+        <div class="todolist__input-wrapper">
+          <input type="text" class="todolist__adder" placeholder="Your task">
+          <i id="clear-input" class="bi bi-x-lg"></i>
+        </div>
+        <button type="submit" class="todolist__adder-btn"> <i class="bi bi-plus-lg"></i> Add Task</button>
+      </form>
+      <div class="todolist__actions">
+        <button id="delete-all">Delete All</button>
+        <select id="sort-todo">
+          <option selected disabled>Sort</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+          <option value="newest">NEWEST</option>
+          <option value="oldest">OLDEST</option>
+        </select>
+      </div>
+    </div>
+    <div class="todolist__search">
+      <input type="text" placeholder="Search tasks" id="search-input">
+      <i id="search-task-close" class="bi bi-x-lg"></i>
+    </div>
+    <div class="todolist__task-container"></div>
+  </div>
+  <script src="./do.js"></script>
+</body>
+</html>
